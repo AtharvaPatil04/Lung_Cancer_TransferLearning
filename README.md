@@ -56,20 +56,27 @@ cd Lung_Cancer_TransferLearning
 python -m venv venv_tf
 venv_tf\Scripts\activate   # For Windows
 ```
+## 3. Dataset Used
 
-### 3. Install Requirements
+The dataset used for this project is the publicly available **Chest X-Ray Images (Pneumonia)** dataset from Kaggle.
+
+📥 [Download Dataset from Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+
+> It contains chest X-ray images categorized into **Normal** and **Pneumonia** classes for training, validation, and testing purposes.
+
+### 4. Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Download Model File
+### 5. Download Model File
 
 > 🔗 [Download best_vgg16_model.h5 from Google Drive](https://drive.google.com/file/d/1EEnv8InMWrE91-Mi5rAroH_lRavdg3Mf/view?usp=sharing)
 
 - Place it in the `/notebooks` folder
 
-### 5. Run the Streamlit App
+### 6. Run the Streamlit App
 
 ```bash
 streamlit run notebooks/lung_cancer_app.py
