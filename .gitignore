@@ -1,0 +1,30 @@
+# Ignore Python cache and logs
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.swp
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+venv_tf/
+env/
+.venv/
+.ENV/
+ENV/
+
+# VSCode settings
+.vscode/
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore dataset to keep repo light
+data/
