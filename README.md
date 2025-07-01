@@ -87,7 +87,7 @@ streamlit run notebooks/lung_cancer_app.py
 
 ## 📬 Contact
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/atharvapatil04)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/atharvaajaypatil/)
 - 📧 atharvapatil221004@gmail.com
 
 ---
