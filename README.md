@@ -1,122 +1,95 @@
-# 🫁 Lung Cancer Detection using Transfer Learning
+# 🧠 Lung Cancer Detection using Transfer Learning (VGG16)
 
-A deep learning project to classify chest X-ray images as **NORMAL** or **PNEUMONIA**, powered by **VGG16 transfer learning** and deployed as a **Streamlit web app**.
-
----
-
-## 📌 Problem Statement
-
-Lung cancer and pneumonia are major causes of death globally. Accurate and early detection can save lives, but manual diagnosis from chest X-rays is time-consuming and error-prone. This project builds a machine learning model to assist doctors in diagnosing X-rays efficiently.
+> A deep learning-powered system for early detection of lung cancer using chest X-ray images — built using transfer learning with VGG16 and deployed using Streamlit.
 
 ---
 
-## 🎯 Project Objectives
+## 📌 Project Highlights
 
-- Use transfer learning (VGG16) for binary image classification (Normal vs Pneumonia)
-- Train the model on chest X-ray images
-- Evaluate accuracy using validation/test set
-- Deploy a simple web app for image prediction using Streamlit
-
----
-
-## 🧠 Technologies Used
-
-| Type | Tech |
-|------|------|
-| Language | Python |
-| Deep Learning | TensorFlow / Keras |
-| Image Processing | OpenCV, Pillow |
-| Data Manipulation | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Web App | Streamlit |
-| Model | VGG16 (Transfer Learning) |
+- ✅ Used VGG16 (Transfer Learning) on chest X-ray images
+- 📊 Achieved 75% validation accuracy
+- 📁 Visualized class distribution and model performance
+- 💻 Real-time predictions via Streamlit web app
+- 🚀 Ready for deployment and real-world usage
 
 ---
 
-## 🗂️ Folder Structure
+## 🔧 Tech Stack
+
+- Python, TensorFlow, Keras, OpenCV, Matplotlib, Seaborn
+- Streamlit (for frontend web app)
+- Transfer Learning (VGG16)
+
+---
+
+## 📁 Folder Structure
 
 ```
 Lung_Cancer_TransferLearning/
-│
-├── data/              # X-ray images (NOT pushed to GitHub)
-├── models/            # Optional model backup
+├── data/                   ← (Not uploaded to GitHub)
 ├── notebooks/
 │   ├── 01_data_preprocessing_and_EDA.ipynb
 │   ├── 02_model_building_and_training.ipynb
-│   ├── 03_model_evaluation.ipynb
-│   ├── lung_cancer_app.py
-│   └── best_vgg16_model.h5
-├── static/            # Streamlit assets (optional)
-├── templates/         # Streamlit HTML templates (if needed)
-├── venv_tf/           # Virtual environment (excluded)
-├── requirements.txt   # Required libraries
+│   ├── 03_evaluation_and_visualization.ipynb
+│   └── lung_cancer_app.py   ← Streamlit App
+├── static/                 ← Streamlit image styling
+├── templates/              ← HTML template for Streamlit
+├── requirements.txt
+├── README.md
 ├── .gitignore
-└── README.md          # This file
 ```
 
 ---
 
-## 🧪 Model Performance
+## 🚀 How to Run the Streamlit App Locally
 
-| Metric        | Value     |
-|---------------|-----------|
-| Validation Accuracy | **75%** |
-| Model Params  | ~14.7M (VGG16 pretrained) |
-| Trainable Params | ~74K |
-| Image Size    | 224 x 224 RGB |
+### 1. Clone the Repository
 
----
-
-## 🚀 How to Run the App Locally
-
-### 1. Clone this repository
 ```bash
-git clone https://github.com/your-username/Lung_Cancer_TransferLearning.git
+git clone https://github.com/AtharvaPatil04/Lung_Cancer_TransferLearning.git
 cd Lung_Cancer_TransferLearning
 ```
 
-### 2. Set up the virtual environment
+### 2. Create a Virtual Environment & Activate
+
 ```bash
 python -m venv venv_tf
-.\venv_tf\Scripts\activate
+venv_tf\Scripts\activate   # For Windows
+```
+
+### 3. Install Requirements
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Streamlit app
+### 4. Download Model File
+
+> 🔗 [Download best_vgg16_model.h5 from Google Drive](https://drive.google.com/file/d/1EEnv8InMWrE91-Mi5rAroH_lRavdg3Mf/view?usp=sharing)
+
+- Place it in the `/notebooks` folder
+
+### 5. Run the Streamlit App
+
 ```bash
 streamlit run notebooks/lung_cancer_app.py
 ```
 
 ---
 
-## 📸 Sample Output
+## 📊 Sample Results
 
-> 🧠 Prediction: **PNEUMONIA**  
-> 🔍 Confidence: **93.2%**  
-> ✅ Image preview displayed in app  
-
----
-
-## 📚 Dataset Source
-
-Chest X-Ray Images (Pneumonia)  
-📦 [Kaggle Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+- **Training Accuracy:** ~90%
+- **Validation Accuracy:** ~75%
+- Real-time prediction of "NORMAL" or "PNEUMONIA" with confidence score
 
 ---
 
-## 👨‍💻 Author
+## 📬 Contact
 
-**Atharva Patil**  
-📍 Pune, India  
-💼 Aspiring Data Scientist | BSc Honours  
-📧 [Connect on LinkedIn](https://www.linkedin.com/) *(insert link)*  
-📸 [Instagram](https://www.instagram.com/) *(optional)*
+- 🔗 [LinkedIn](https://www.linkedin.com/in/atharvapatil04)
+- 📧 atharvapatil221004@gmail.com
 
 ---
 
-## ⭐ Project Highlights
-
-- ✅ Real-world ML application in healthcare
-- ✅ Transfer learning using VGG16
-- ✅ 75% validation accuracy
-- ✅ Deployed as a live web app with Streamlit
+## ⭐ Star this repo if you find it helpful!
